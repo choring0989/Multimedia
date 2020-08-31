@@ -305,6 +305,19 @@ function render(first, count) {
 
 // render2 -> 0.1초마다 캔버스에 모든 오브젝트를 새로 그리는 랜더링 함수
 function render2(gl, fColor){
+	landscape(gl, fColor)
+	tree_generator(gl, fColor, 0.8, 0.4 ,-0.1)
+	tree_generator(gl, fColor, 0.7, 0.08 ,-0.2)
+	tree_generator(gl, fColor, 0.6, -0.85 ,-0.4)
+	tree_generator(gl, fColor, 0.55, -0.7 ,-0.65)
+	tree_generator(gl, fColor, 0.55, 0.72 ,-0.3)
+	star_generator(gl, fColor, 0.1, 0.5 ,0.7)
+	star_generator(gl, fColor, 0.05, -0.9 ,0.9)
+	star_generator(gl, fColor, 0.06, -0.7 ,0.83)
+	star_generator(gl, fColor, 0.04, 0.7 ,0.9)
+	star_generator(gl, fColor, 0.025, -0.35 ,0.65)
+	star_generator(gl, fColor, 0.035, -0.45 ,0.6)
+	
 	setTimeout( function() {
 		gl.clear( gl.COLOR_BUFFER_BIT );
 
